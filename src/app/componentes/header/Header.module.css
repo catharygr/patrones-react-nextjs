@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Figtree";
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf), local("Figtree");
+  font-display: swap;
+}
+
 :root {
   --clr-primary: hsl(47, 88%, 63%);
   --clr-neutral-1: hsl(0, 0%, 100%);
