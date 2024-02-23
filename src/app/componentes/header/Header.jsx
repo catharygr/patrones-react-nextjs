@@ -1,22 +1,38 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
-import { useEffect } from "react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Theme from "./Theme";
 
 export default function Header() {
-  const [dark, setDark] = React.useState(false);
+  const [dark, setDark] = useState(false);
+  const [root, setRoot] = useState(null);
 
-  React.useEffect(() => {
-    const mode = localStorage.getItem("mode");
-    if (mode && mode === "dark") {
-      setDark(true);
-    }
+  useEffect(() => {
+    setRoot(document.querySelector(":root"));
   }, []);
+
+  useEffect(() => {
+    if (root) {
+      const mode = localStorage.getItem("mode");
+      if (mode && mode === "dark") {
+        root.classList.add("dark");
+        setDark(true);
+      }
+    }
+  }, [root]);
 
   const handleToggle = () => {
     setDark((prevDark) => !prevDark);
+    if (root) {
+      root.classList.toggle("dark");
+      if (root.classList.contains("dark")) {
+        localStorage.setItem("mode", "dark");
+      } else {
+        localStorage.setItem("mode", "light");
+      }
+    }
   };
+
   return (
     <header>
       <Theme
