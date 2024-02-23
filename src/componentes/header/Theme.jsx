@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
-import { Mom, Sun } from "react-feather";
+
+import { Moon, Sun } from "react-feather";
 
 export default function Theme(props) {
   const [hover, setHover] = React.useState(false);
@@ -30,7 +32,7 @@ export default function Theme(props) {
       onFocus={handleEnter}
       onBlur={handleLeave}
     >
-      <PiMoonDuotone
+      <Moon
         style={{
           width: "100%",
           display: props.dark ? "none" : "block",
@@ -38,7 +40,7 @@ export default function Theme(props) {
         }}
         aria-hidden="true"
       />
-      <PiSunDimDuotone
+      <Sun
         style={{
           width: "100%",
           display: props.dark ? "block" : "none",
