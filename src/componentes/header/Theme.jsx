@@ -1,6 +1,5 @@
 import React from "react";
-import { PiMoonDuotone } from "react-icons/pi";
-import { PiSunDimDuotone } from "react-icons/pi";
+import { Mom, Sun } from "react-feather";
 
 export default function Theme(props) {
   const [hover, setHover] = React.useState(false);
