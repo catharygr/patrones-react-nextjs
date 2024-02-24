@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   const variants = {
@@ -70,7 +70,7 @@ export default function Hero() {
           strokeWidth="3"
           d="m6.69-357.5 135.583 135.727c12.481 12.494 12.481 32.737 0 45.231L-45.544 11.475c-12.481 12.494-12.481 32.737 0 45.23L107.088 209.5"
         />
-        <motion.path
+        <path
           stroke="#111"
           strokeWidth="3"
           d="M69.965 71.719v23.334h23.334M136.079 52.273V28.94h-23.334M102.845 38.838v46.67M210.364-37.5l60.873 60.873c12.497 12.496 12.497 32.758 0 45.254l-77.745 77.746c-12.497 12.496-12.497 32.758 0 45.254l69.872 69.873"

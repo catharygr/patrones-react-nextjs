@@ -1,11 +1,14 @@
+"use client";
+
 import React from "react";
 import Hero from "./Hero";
 import avatar from "../../assets/images/caty-emoji.png";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { Link } from "react-feather";
+import { useState } from "react";
 
 export default function Main() {
-  const [hover, setHover] = React.useState(false);
+  const [hover, setHover] = useState(false);
 
   // Styles
   const handleEnter = () => {
@@ -26,13 +29,13 @@ export default function Main() {
   return (
     <main>
       <Hero />
-      <div className="info">
-        <p className="category extra-bold">Learning</p>
-        <p className="date">
+      <div className={styles.info}>
+        <p className={styles.categoryExtraBold}>Learning</p>
+        <p className={styles.date}>
           Published <time dateTime="2023-12-21">21 Dec 2023</time>
         </p>
-        <h1 className="title extra-bold">
-          <motion.a
+        <h1 className={styles.titleExtraBold}>
+          <Link
             href="#"
             variants={variants}
             animate="title"
@@ -43,7 +46,7 @@ export default function Main() {
             onBlur={handleLeave}
           >
             HTML & CSS foundations
-          </motion.a>
+          </Link>
         </h1>
         <p className="description">
           These languages are the backbone of every website, defining structure,
