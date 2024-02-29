@@ -1,5 +1,6 @@
 "use client";
 import { createContext, useContext, useState } from "react";
+import styles from "./Menu.module.css";
 
 const MenuContext = createContext();
 
@@ -11,12 +12,9 @@ export const Menu = ({ children }) => {
   };
 
   return (
-    <MenuContext.Provider value={{ activeColor, setActive }}>
+    <MenuContext.Provider value={{ activeColor, handleItemClick }}>
       <h1>Menú</h1>
-      <ul
-        className={styles.navList}
-        style={{ marginBottom: "98px" }}
-      ></ul>
+      <ul className={styles.navList}></ul>
       {children}
     </MenuContext.Provider>
   );
@@ -35,7 +33,7 @@ export const MenuItem = ({ children, color }) => {
       onClick={handleClick}
       style={{
         background: color === activeColor ? color : "transparent",
-        color: color === activeColor ? "white" : "black",
+        color: color === activeColor ? "#ffffff" : "#6666666",
       }}
     >
       {children}
