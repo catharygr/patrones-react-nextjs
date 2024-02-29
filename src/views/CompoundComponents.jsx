@@ -1,4 +1,4 @@
-import { Menu } from "../componentes/menu/Menu";
+import { Menu, MenuItem } from "../componentes/menu/Menu";
 
 const CompoundComponents = () => {
   return (
@@ -6,9 +6,10 @@ const CompoundComponents = () => {
       <nav>
         <h1 style={{ color: "violet" }}>Compound Components</h1>
         <Menu>
-          <MenuItem color="red">Home</MenuItem>
-          <MenuItem color="blue">About</MenuItem>
-          <MenuItem color="green">Contact</MenuItem>
+          <MenuItem color="green">Inicio</MenuItem>
+          <MenuItem color="blue">Perfil</MenuItem>
+          <MenuItem color="red">Configuración</MenuItem>
+        </Menu>
       </nav>
     </div>
   );

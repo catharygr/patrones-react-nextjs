@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const MenuContext = createContext();
 
 export const Menu = ({ children }) => {
-  const [activeColor, setActiveColor] = useState("home");
+  const [activeColor, setActiveColor] = useState(null);
 
   const handleSetActive = (color) => {
     setActiveColor(color);
@@ -24,6 +24,10 @@ export const Menu = ({ children }) => {
 // Componente que consume el contexto
 export const MenuItem = ({ children, color }) => {
   const { activeColor, setActiveColor } = useContext(MenuContext);
+
+  const handleClick = () => {
+    setActiveColor(color);
+  };
 
   return (
     <li
