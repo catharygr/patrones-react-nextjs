@@ -2,7 +2,8 @@
 
 import React from "react";
 import Hero from "./Hero";
-
+import avatar from "../../assets/images/caty-emoji.png";
+import Image from "next/image";
 import { Link } from "react-feather";
 import { useState } from "react";
 
