@@ -1,4 +1,4 @@
-import { Menu, MenuItem } from "../componentes/menu/Menu";
+import { Menu, MenuItem } from "../app/componentes/menu/Menu";
 
 const CompoundComponents = () => {
   return (

@@ -1,3 +1,4 @@
+"use client";
 import { createContext, useContext, useState } from "react";
 
 const MenuContext = createContext();
@@ -5,7 +6,7 @@ const MenuContext = createContext();
 export const Menu = ({ children }) => {
   const [activeColor, setActiveColor] = useState(null);
 
-  const handleSetActive = (color) => {
+  const handleItemClick = (color) => {
     setActiveColor(color);
   };
 
@@ -23,19 +24,19 @@ export const Menu = ({ children }) => {
 
 // Componente que consume el contexto
 export const MenuItem = ({ children, color }) => {
-  const { activeColor, setActiveColor } = useContext(MenuContext);
+  const { activeColor, handleItemClick } = useContext(MenuContext);
 
   const handleClick = () => {
-    setActiveColor(color);
+    handleItemClick(color);
   };
 
   return (
     <li
+      onClick={handleClick}
       style={{
-        color: activeColor === color ? color : "black",
-        cursor: "pointer",
+        background: color === activeColor ? color : "transparent",
+        color: color === activeColor ? "white" : "black",
       }}
-      onClick={() => setActiveColor(color)}
     >
       {children}
     </li>
