@@ -30,6 +30,7 @@ export const MenuItem = ({ children, color }) => {
 
   return (
     <li
+      className={styles.navItem}
       onClick={handleClick}
       style={{
         background: color === activeColor ? color : "transparent",

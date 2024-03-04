@@ -1,11 +1,10 @@
 import { Menu, MenuItem } from "../app/componentes/menu/Menu";
-import styles from "./CompoundComponents.module.css";
 
 const CompoundComponents = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <h1 style={{ color: "violet" }}>Compound Components</h1>
-      <nav className={styles.navMenu}>
+      <nav>
         <Menu>
           <MenuItem color="green">Inicio</MenuItem>
           <MenuItem color="blue">Perfil</MenuItem>
