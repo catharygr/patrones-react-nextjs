@@ -13,7 +13,7 @@ export const Menu = ({ children }) => {
 
   return (
     <MenuContext.Provider value={{ activeColor, handleItemClick }}>
-      <h1>Menú</h1>
+      <h1 className={styles.h1}>Menú</h1>
       <ul className={styles.navList}></ul>
       {children}
     </MenuContext.Provider>
