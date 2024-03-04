@@ -1,8 +1,0 @@
-.hero {
-  border-radius: 0.75rem;
-  margin-bottom: 1.5rem;
-
-  & .bg {
-    fill: var(--clr-primary);
-  }
-}
