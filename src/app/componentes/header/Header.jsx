@@ -13,6 +13,7 @@ export default function Header() {
 
   useEffect(() => {
     if (root) {
+      root.classList.add("theme");
       const mode = localStorage.getItem("mode");
       if (mode && mode === "dark") {
         root.classList.add("dark");

@@ -4,7 +4,7 @@
   font-display: swap;
 }
 
-:root {
+/* :root {
   --clr-primary: hsl(47, 88%, 63%);
   --clr-neutral-1: hsl(0, 0%, 100%);
   --clr-neutral-2: hsl(0, 0%, 40%);
@@ -26,4 +26,15 @@
   padding: 1.5rem;
   font-family: "Figtree", sans-serif;
   line-height: 1;
+} */
+
+.theme {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #000000; /* Texto negro */
+}
+
+/* Estilos para el tema oscuro */
+.theme.dark {
+  background-color: #000000; /* Fondo negro */
+  color: #ffffff; /* Texto blanco */
 }
