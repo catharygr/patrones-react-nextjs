@@ -1,11 +1,12 @@
 .navList {
-  /* display: flex;
+  display: flex;
   list-style: none;
-  padding: 0; */
-  /* margin-top: 1rem; */
-  /* margin-bottom: 3rem; */
+
+  margin-bottom: 3rem;
 }
 
-.navList > li {
-  /* margin-bottom: 1rem; */
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
