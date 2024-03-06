@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className={styles.container}>
       <Link href="/counter">ContainerPresentational</Link>
-      <Link href="/menu">Menu</Link>
+      <Link href="/menu">CompoudContainer</Link>
     </main>
   );
 }

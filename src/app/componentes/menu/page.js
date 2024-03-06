@@ -1,8 +1,8 @@
 import CompoundComponents from "@/app/componentes/menu/CompoundComponents";
 
-export default function Menu() {
+export default function CompoudContainer() {
   return (
-    <div className={styles.container}>
+    <div>
       <CompoundComponents />
     </div>
   );
