@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Style from "./CounterComponente.module.css";
 
 export const CounterComponente = () => {
   const [count, setCount] = useState(0);
@@ -26,8 +27,18 @@ const CounterPresentational = ({ count, onIncrement, onDecrement }) => {
     <div>
       <h1>App Contador</h1>
       <h2>Contador: {count}</h2>
-      <button onClick={onIncrement}>Incrementar</button>
-      <button onClick={onDecrement}>Decrementar</button>
+      <button
+        className={Style.btn}
+        onClick={onIncrement}
+      >
+        Incrementar
+      </button>
+      <button
+        className={Style.btn}
+        onClick={onDecrement}
+      >
+        Decrementar
+      </button>
     </div>
   );
 };
