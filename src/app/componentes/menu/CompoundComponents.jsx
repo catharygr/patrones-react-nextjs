@@ -1,4 +1,4 @@
-import { Menus, MenuItem } from "../app/componentes/menu/Menus";
+import { Menus, MenuItem } from "./Menus";
 
 const CompoundComponents = () => {
   return (

@@ -1,4 +1,4 @@
-import ContainerPresentational from "@/views/ContainerPresentational";
+import ContainerPresentational from "@/app/componentes/counter/ContainerPresentational";
 
 export default function Counter() {
   return (

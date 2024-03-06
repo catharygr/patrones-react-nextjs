@@ -1,4 +1,4 @@
-import CompoundComponents from "@/views/CompoundComponents";
+import CompoundComponents from "@/app/componentes/menu/CompoundComponents";
 
 export default function Menu() {
   return (
