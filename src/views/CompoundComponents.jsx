@@ -1,25 +1,25 @@
-import { Menu, MenuItem } from "../app/componentes/menu/Menu";
+import { Menus, MenuItem } from "../app/componentes/menu/Menus";
 
 const CompoundComponents = () => {
   return (
     <div>
       <h1 style={{ color: "violet" }}>Compound Components</h1>
       <nav>
-        <Menu>
+        <Menus>
           <MenuItem color="green">Inicio</MenuItem>
           <MenuItem color="blue">Perfil</MenuItem>
           <MenuItem color="red">Configuración</MenuItem>
-        </Menu>
-        <Menu>
+        </Menus>
+        <Menus>
           <MenuItem color="orange">Post</MenuItem>
           <MenuItem color="pink">Contador</MenuItem>
           <MenuItem color="yellow">Imágenes</MenuItem>
-        </Menu>
-        <Menu>
+        </Menus>
+        <Menus>
           <MenuItem color="purple">Productos</MenuItem>
           <MenuItem color="brown">Cesta</MenuItem>
           <MenuItem color="gray">Tarjetas</MenuItem>
-        </Menu>
+        </Menus>
       </nav>
     </div>
   );

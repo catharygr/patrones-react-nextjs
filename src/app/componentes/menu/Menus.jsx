@@ -1,6 +1,6 @@
 "use client";
 import { createContext, useContext, useState } from "react";
-import styles from "./Menu.module.css";
+import styles from "./Menus.module.css";
 
 const MenuContext = createContext();
 
