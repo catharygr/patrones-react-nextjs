@@ -1,12 +1,11 @@
-import styles from "./page.module.css";
 import CompoundComponents from "@/views/CompoundComponents";
 import ContainerPresentational from "@/views/ContainerPresentational";
 
-export default function Home() {
+export default function Counter() {
   return (
-    <main className={styles.container}>
+    <div className={styles.container}>
       <CompoundComponents />
       <ContainerPresentational />
-    </main>
+    </div>
   );
 }
