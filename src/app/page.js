@@ -1,14 +1,12 @@
 import styles from "./page.module.css";
-import Header from "./componentes/header/Header";
-import CompoundComponents from "@/views/CompoundComponents";
-import ContainerPresentational from "@/views/ContainerPresentational";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.container}>
-      <Header />
-      <CompoundComponents />
-      <ContainerPresentational />
+      <Link href="/counter">
+        <a>Counter</a>
+      </Link>
     </main>
   );
 }
