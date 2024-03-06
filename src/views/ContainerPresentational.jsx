@@ -1,6 +1,6 @@
-import CounterComponente from "../componentes/counter/ CounterComponente";
+import CounterComponente from "../app/componentes/counter/CounterComponente";
 
-export const ContainerPresentational = () => {
+const ContainerPresentational = () => {
   return (
     <div style={{ marginBottom: "200px" }}>
       <h1 style={{ color: "#646cff" }}>Smart/Dumb Stateful/Stateless</h1>
@@ -8,3 +8,5 @@ export const ContainerPresentational = () => {
     </div>
   );
 };
+
+export default ContainerPresentational;
