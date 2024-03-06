@@ -1,5 +1,5 @@
 import { CounterComponente } from "./CounterComponente";
-import styles from "./ContainerPresentational.module.css";
+import styles from "./ContainerComponent.module.css";
 
 const ContainerComponent = () => {
   return (
