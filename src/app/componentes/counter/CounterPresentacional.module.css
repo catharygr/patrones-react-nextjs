@@ -9,3 +9,12 @@
   color: #b4adad;
   transition: all 0.3s ease;
 }
+
+.counterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
