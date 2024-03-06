@@ -25,7 +25,7 @@ const CounterPresentational = ({ count, onIncrement, onDecrement }) => {
   return (
     <div>
       <h1>App Contador</h1>
-      <h2>{count}</h2>
+      <h2>Contador: {count}</h2>
       <button onClick={onIncrement}>Incrementar</button>
       <button onClick={onDecrement}>Decrementar</button>
     </div>

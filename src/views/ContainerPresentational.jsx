@@ -1,4 +1,4 @@
-import CounterComponente from "../app/componentes/counter/CounterComponente";
+import { CounterComponente } from "../app/componentes/counter/CounterComponente";
 
 const ContainerPresentational = () => {
   return (
