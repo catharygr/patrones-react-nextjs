@@ -1,0 +1,11 @@
+.btn {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #0b490b;
+  color: #b4adad;
+  transition: all 0.3s ease;
+}
