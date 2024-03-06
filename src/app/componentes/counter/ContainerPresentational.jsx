@@ -1,9 +1,10 @@
 import { CounterComponente } from "./CounterComponente";
+import styles from "./ContainerPresentational.module.css";
 
 const ContainerPresentational = () => {
   return (
-    <div style={{ marginBottom: "200px" }}>
-      <h1 style={{ color: "#646cff" }}>Smart/Dumb Stateful/Stateless</h1>
+    <div className={styles.containerPresentational}>
+      <h1>Smart/Dumb Stateful/Stateless</h1>
       <CounterComponente />
     </div>
   );
