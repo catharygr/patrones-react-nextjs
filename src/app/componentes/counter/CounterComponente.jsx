@@ -5,19 +5,19 @@ import styles from "./CounterPresentacional.module.css";
 export const CounterComponente = () => {
   const [count, setCount] = useState(0);
 
-  const onIncrement = () => {
+  const handleIncrement = () => {
     setCount(count + 1);
   };
 
-  const onDecrement = () => {
+  const handleDecrement = () => {
     setCount(count - 1);
   };
 
   return (
     <CounterPresentational
       count={count}
-      onIncrement={onIncrement}
-      onDecrement={onDecrement}
+      handleIncrement={handleIncrement}
+      handleDecrement={handleDecrement}
     />
   );
 };
