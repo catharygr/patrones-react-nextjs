@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "App varias nextjs",
+  title: "Patrones de diseño con React",
 };
 
 export default function RootLayout({ children }) {
