@@ -1,9 +1,9 @@
-import ContainerComponent from "@/app/componentes/counter/ContainerComponent";
+import ContainerPresentational from "@/app/componentes/counter/ContainerPresentational";
 
-export default function ContainerPresentational() {
+export default function Container() {
   return (
     <div className={styles.container}>
-      <ContainerComponent />
+      <ContainerPresentational />
     </div>
   );
 }
