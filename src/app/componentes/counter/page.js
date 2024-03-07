@@ -1,4 +1,5 @@
 import ContainerPresentational from "@/app/componentes/counter/ContainerPresentational";
+import styles from "./page.module.css";
 
 export default function Container() {
   return (
@@ -6,4 +7,5 @@ export default function Container() {
       <ContainerPresentational />
     </div>
   );
+  console.log("Container");
 }
