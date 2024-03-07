@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "./CounterPresentacional.module.css";
+import styles from "./CounterComponente.module.css";
 
 export const CounterComponente = () => {
   const [count, setCount] = useState(0);

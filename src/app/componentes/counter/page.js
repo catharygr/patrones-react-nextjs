@@ -1,4 +1,4 @@
-import ContainerComponent from "@/app/componentes/counter/ContainerComponent";
+import ContainerComponent from "./componentes/counter/ContainerComponent";
 import styles from "./page.module.css";
 
 export default function ContainerPresentational() {
