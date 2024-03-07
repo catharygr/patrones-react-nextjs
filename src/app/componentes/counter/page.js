@@ -1,11 +1,11 @@
-import Container from "@/app/componentes/counter/Container";
+import ContainerComponent from "@/app/componentes/counter/ContainerComponent";
 import styles from "./page.module.css";
 
-export default function CounterPage() {
+export default function ContainerPresentational() {
   console.log("Container");
   return (
     <div className={styles.container}>
-      <Container />
+      <ContainerComponent />
     </div>
   );
 }
