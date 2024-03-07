@@ -4,7 +4,7 @@ import styles from "./Menus.module.css";
 
 const MenuContext = createContext();
 
-export const Menu = ({ children }) => {
+export const Menus = ({ children }) => {
   const [activeColor, setActiveColor] = useState(null);
 
   const handleItemClick = (color) => {
