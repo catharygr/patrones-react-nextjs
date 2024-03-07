@@ -1,6 +1,6 @@
 import CompoundComponents from "@/app/componentes/menu/CompoundComponents";
 
-export default function CompoudContainer() {
+export default function MenuPage() {
   return (
     <div>
       <CompoundComponents />
