@@ -14,7 +14,11 @@ export const CounterComponente = () => {
   };
 
   return (
-    
+    <CounterPresentational
+      count={count}
+      handleIncrement={handleIncrement}
+      handleDecrement={handleDecrement}
+    />
   );
 };
 
