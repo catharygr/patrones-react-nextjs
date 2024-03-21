@@ -25,3 +25,13 @@ export function CounterProvider({ children }) {
     </CounterContext.Provider>
   );
 }
+
+export function useCounterContext() {
+  const context = useContext(CounterContext);
+
+  if (!context) {
+    throw new Error("useCounterContext must be used within a CounterProvider");
+  }
+
+  return context;
+}
