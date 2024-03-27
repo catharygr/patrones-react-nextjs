@@ -15,11 +15,7 @@ const CompoundComponents = () => {
           <MenuItem color="pink">Contador</MenuItem>
           <MenuItem color="yellow">Imágenes</MenuItem>
         </Menus>
-        <Menus>
-          <MenuItem color="purple">Productos</MenuItem>
-          <MenuItem color="brown">Cesta</MenuItem>
-          <MenuItem color="gray">Tarjetas</MenuItem>
-        </Menus>
+        <Menus></Menus>
       </nav>
     </div>
   );
