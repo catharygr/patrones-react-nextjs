@@ -4,6 +4,13 @@
   font-display: swap;
 }
 
+:root {
+  --clr-primary: hsl(47, 88%, 63%);
+  --clr-neutral-1: hsl(0, 0%, 100%);
+  --clr-neutral-2: hsl(0, 0%, 40%);
+  --clr-neutral-3: hsl(0, 0%, 7%);
+}
+
 :root.dark {
   --clr-primary: hsl(47, 12%, 25%);
   --clr-neutral-1: hsl(0, 0%, 10%);
