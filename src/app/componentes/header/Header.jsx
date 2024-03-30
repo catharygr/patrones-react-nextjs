@@ -8,6 +8,10 @@ export default function Header() {
   const [root, setRoot] = useState(null);
 
   useEffect(() => {
+    setRoot(document.querySelector(":root"));
+  }, []);
+
+  useEffect(() => {
     if (root) {
       const mode = localStorage.getItem("mode");
       if (mode && mode === "dark") {
