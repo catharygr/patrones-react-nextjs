@@ -31,6 +31,23 @@ export default function Theme(props) {
       onMouseLeave={handleLeave}
       onFocus={handleEnter}
       onBlur={handleLeave}
-    ></button>
+    >
+      <Moon
+        style={{
+          width: "100%",
+          display: props.dark ? "none" : "block",
+          color: hover ? "steelblue" : "#99a",
+        }}
+        aria-hidden="true"
+      />
+      <Sun
+        style={{
+          width: "100%",
+          display: props.dark ? "block" : "none",
+          color: hover ? "goldenrod" : "#99a",
+        }}
+        aria-hidden="true"
+      />
+    </button>
   );
 }
